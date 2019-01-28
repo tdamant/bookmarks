@@ -1,13 +1,13 @@
+require 'pg'
+
 class Bookmark
 
   attr_reader :url
 
 
   def self.all
-    [
-      'http://www.makersacademy.com',
-      'http://www.buzzfeed.com',
-      'http://www.google.com'
-    ]
-  end
-end
+    conn = PG.connect( dbname: 'bookmark_manager' )
+    result = conn.exec('SELECT * FROM bookmarks')
+    result.column_values(1)
+      end
+    end
