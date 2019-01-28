@@ -1,14 +1,15 @@
 require 'sinatra'
+require './lib/bookmark.rb'
 
 class Bookmarks < Sinatra::Base
 
-get '/' do
-  "Hello world"
-  erb(:index)
-end
-
-get '/view' do
-  erb(:view)
+get '/bookmarks' do
+  booksmarks = [
+    'http://www.makersacademy.com',
+    'http://www.buzzfeed.com',
+    'http://www.google.com'
+  ]
+  bookmarks.join
 end
 
 end
