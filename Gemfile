@@ -4,6 +4,7 @@ gem 'flog'
 gem 'launchy'
 gem 'rake'
 gem 'sinatra'
+gem 'pg'
 
 group :test do
   gem 'capybara'

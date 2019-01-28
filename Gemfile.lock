@@ -33,6 +33,7 @@ GEM
     parser (2.6.0.0)
       ast (~> 2.4.0)
     path_expander (1.0.3)
+    pg (1.1.4)
     powerpack (0.1.2)
     public_suffix (3.0.3)
     rack (2.0.6)
@@ -94,6 +95,7 @@ DEPENDENCIES
   capybara
   flog
   launchy
+  pg
   rake
   rspec
   rubocop
@@ -102,4 +104,4 @@ DEPENDENCIES
   sinatra
 
 BUNDLED WITH
-   1.16.6
+   1.17.2
